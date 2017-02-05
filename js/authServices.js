@@ -16,7 +16,11 @@ angular.module('app')
             console.log("success");
             $state.go('app.main');
         }, function(data){
-
+            
+            $state.go('app.main');
+            /* this line will be removed but given url is not working.
+            So for the checking purpose i written this.
+            i transfered route to dashboard in case of service failed. */
         })
     };
     
